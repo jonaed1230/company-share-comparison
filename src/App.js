@@ -108,8 +108,7 @@ function App() {
       <div className="w-full md:w-auto">
         <div className="px-4 py-5 sm:p-6">
           <p className="text-center">
-            <b>Question:</b> Collect: 5 companies 20 shares Comparison Both calculate
-            by manually and MAT lab or any other programming
+            <b>Question:</b> Collect: 5 companies 20 shares Comparison
           </p>
           {companyList.map((company, index) => (
             <CompanyForm
@@ -157,12 +156,12 @@ function App() {
                           >
                             Sum of D Value
                           </th>
-                          <th
+                          {/* <th
                             scope="col"
                             className="sticky top-0 z-10 border-b border-gray-300 bg-gray-50 bg-opacity-75 py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter sm:pl-6 lg:pl-8"
                           >
                             Square of D Value
-                          </th>
+                          </th> */}
                           <th
                             scope="col"
                             className="sticky top-0 z-10 border-b border-gray-300 bg-gray-50 bg-opacity-75 py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 backdrop-blur backdrop-filter sm:pl-6 lg:pl-8"
@@ -204,14 +203,14 @@ function App() {
                             >
                               {sumOfDValueDetails[company]}
                             </td>
-                            <td
+                            {/* <td
                               className={classNames(
                                 index !== 4 ? "border-b border-gray-200" : "",
                                 "whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6 lg:pl-8"
                               )}
                             >
                               {squareOfDValueDetails[company]}
-                            </td>
+                            </td> */}
                             <td
                               className={classNames(
                                 index !== 4 ? "border-b border-gray-200" : "",
