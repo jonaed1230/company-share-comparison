@@ -25,6 +25,7 @@ const Index = ({ companyName, companyShares, setCompanyShares }) => {
             Share 1
           </label>
           <input
+            required
             type="number"
             onChange={onChange}
             value={share?.share1}
@@ -42,6 +43,7 @@ const Index = ({ companyName, companyShares, setCompanyShares }) => {
             Share 2
           </label>
           <input
+            required
             type="number"
             onChange={onChange}
             value={share?.share2}
@@ -59,6 +61,7 @@ const Index = ({ companyName, companyShares, setCompanyShares }) => {
             Share 3
           </label>
           <input
+            required
             type="number"
             onChange={onChange}
             value={share?.share3}
@@ -76,6 +79,7 @@ const Index = ({ companyName, companyShares, setCompanyShares }) => {
             Share 4
           </label>
           <input
+            required
             type="number"
             onChange={onChange}
             value={share?.share4}
@@ -93,6 +97,7 @@ const Index = ({ companyName, companyShares, setCompanyShares }) => {
             Share 5
           </label>
           <input
+            required
             type="number"
             onChange={onChange}
             value={share?.share5}
@@ -110,6 +115,7 @@ const Index = ({ companyName, companyShares, setCompanyShares }) => {
             Share 6
           </label>
           <input
+            required
             type="number"
             onChange={onChange}
             value={share?.share6}
@@ -127,6 +133,7 @@ const Index = ({ companyName, companyShares, setCompanyShares }) => {
             Share 7
           </label>
           <input
+            required
             type="number"
             onChange={onChange}
             value={share?.share7}
@@ -144,6 +151,7 @@ const Index = ({ companyName, companyShares, setCompanyShares }) => {
             Share 8
           </label>
           <input
+            required
             type="number"
             onChange={onChange}
             value={share?.share8}
@@ -161,6 +169,7 @@ const Index = ({ companyName, companyShares, setCompanyShares }) => {
             Share 9
           </label>
           <input
+            required
             type="number"
             onChange={onChange}
             value={share?.share9}
@@ -178,6 +187,7 @@ const Index = ({ companyName, companyShares, setCompanyShares }) => {
             Share 10
           </label>
           <input
+            required
             type="number"
             onChange={onChange}
             value={share?.share10}
@@ -195,6 +205,7 @@ const Index = ({ companyName, companyShares, setCompanyShares }) => {
             Share 11
           </label>
           <input
+            required
             type="number"
             onChange={onChange}
             value={share?.share11}
@@ -212,6 +223,7 @@ const Index = ({ companyName, companyShares, setCompanyShares }) => {
             Share 12
           </label>
           <input
+            required
             type="number"
             onChange={onChange}
             value={share?.share12}
@@ -229,6 +241,7 @@ const Index = ({ companyName, companyShares, setCompanyShares }) => {
             Share 13
           </label>
           <input
+            required
             type="number"
             onChange={onChange}
             value={share?.share13}
@@ -246,6 +259,7 @@ const Index = ({ companyName, companyShares, setCompanyShares }) => {
             Share 14
           </label>
           <input
+            required
             type="number"
             onChange={onChange}
             value={share?.share14}
@@ -263,6 +277,7 @@ const Index = ({ companyName, companyShares, setCompanyShares }) => {
             Share 15
           </label>
           <input
+            required
             type="number"
             onChange={onChange}
             value={share?.share15}
@@ -280,6 +295,7 @@ const Index = ({ companyName, companyShares, setCompanyShares }) => {
             Share 16
           </label>
           <input
+            required
             type="number"
             onChange={onChange}
             value={share?.share16}
@@ -297,6 +313,7 @@ const Index = ({ companyName, companyShares, setCompanyShares }) => {
             Share 17
           </label>
           <input
+            required
             type="number"
             onChange={onChange}
             value={share?.share17}
@@ -314,6 +331,7 @@ const Index = ({ companyName, companyShares, setCompanyShares }) => {
             Share 18
           </label>
           <input
+            required
             type="number"
             onChange={onChange}
             value={share?.share18}
@@ -331,6 +349,7 @@ const Index = ({ companyName, companyShares, setCompanyShares }) => {
             Share 19
           </label>
           <input
+            required
             type="number"
             onChange={onChange}
             value={share?.share19}
@@ -348,6 +367,7 @@ const Index = ({ companyName, companyShares, setCompanyShares }) => {
             Share 20
           </label>
           <input
+            required
             type="number"
             onChange={onChange}
             value={share?.share20}

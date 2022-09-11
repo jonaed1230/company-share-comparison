@@ -1,6 +1,8 @@
 /* eslint-disable array-callback-return */
 import React, { useState } from "react";
 import CompanyForm from "./components/CompanyForm";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "./App.css";
 
 function App() {
@@ -22,6 +24,10 @@ function App() {
     return classes.filter(Boolean).join(" ");
   };
   const handleSubmit = () => {
+    const totalFilledFields = Object.keys(companyShares).map((companyName) => Object.keys(companyShares[companyName]).map(key => key).length).reduce((a, b) => a + b, 0);
+    if (totalFilledFields < 100) {
+      return toast.error("Please fill all the fields");
+    }
     Object.keys(companyShares).map((companyName) => {
       const company = companyShares[companyName];
       const shares = Object.keys(company).map((key) => {
@@ -98,6 +104,7 @@ function App() {
   };
   return (
     <div className="App p-6">
+      <ToastContainer />
       <div className="w-full md:w-auto">
         <div className="px-4 py-5 sm:p-6">
           <p className="text-center">
@@ -123,7 +130,7 @@ function App() {
           </div>
           {visible && (
             <div className="mt-4 flex flex-col">
-              <div className="-my-2 -mx-4 sm:-mx-6 lg:-mx-8">
+              <div className="">
                 <div className="inline-block min-w-full py-2 align-middle">
                   <div className="shadow-sm ring-1 ring-black ring-opacity-5">
                     <table
